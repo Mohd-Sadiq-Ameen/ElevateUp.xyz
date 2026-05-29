@@ -4,7 +4,6 @@ export default function Footer() {
   return (
     <footer className="bg-white border-t border-gray-200 pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
         {/* Main footer grid - 4 columns */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-8">
           {/* Brand column */}
@@ -21,30 +20,28 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Services (core, reduced list) */}
+          {/* Services */}
           <div>
             <h3 className="text-sm font-semibold text-gray-800 uppercase tracking-wider">
               Services
             </h3>
             <ul className="mt-3 space-y-2 text-sm text-gray-500">
-              <li><Link href="/services/websites" className="hover:text-gray-800 transition">Website Development</Link></li>
-              <li><Link href="/services/apps" className="hover:text-gray-800 transition">App Development</Link></li>
+              <li><Link href="/services/websites" className="hover:text-gray-800 transition">Website/App Development</Link></li>
               <li><Link href="/services/content" className="hover:text-gray-800 transition">Content & Social Media</Link></li>
               <li><Link href="/services/video" className="hover:text-gray-800 transition">Video Editing</Link></li>
               <li><Link href="/services/ai" className="hover:text-gray-800 transition">AI Automation</Link></li>
-              <li><Link href="/services/lead-generation" className="hover:text-gray-800 transition">Lead Generation</Link></li>
             </ul>
           </div>
 
-          {/* Free Resources (essential only) */}
+          {/* Free Resources (all point to /courses) */}
           <div>
             <h3 className="text-sm font-semibold text-gray-800 uppercase tracking-wider">
               Free Resources
             </h3>
             <ul className="mt-3 space-y-2 text-sm text-gray-500">
-              <li><Link href="/courses/social-media" className="hover:text-gray-800 transition">Social Media Growth Blueprint</Link></li>
-              <li><Link href="/courses/website-conversion" className="hover:text-gray-800 transition">Website Conversion Blueprint</Link></li>
-              <li><Link href="/courses/get-more-customers" className="hover:text-gray-800 transition">Get More Customers Blueprint</Link></li>
+              <li><Link href="/courses" className="hover:text-gray-800 transition">Social Media Growth Blueprint</Link></li>
+              <li><Link href="/courses" className="hover:text-gray-800 transition">Website Conversion Blueprint</Link></li>
+              <li><Link href="/courses" className="hover:text-gray-800 transition">Get More Customers Blueprint</Link></li>
               <li><Link href="/breakdown" className="hover:text-gray-800 transition">Free 30‑Min Growth Zoom Call</Link></li>
             </ul>
           </div>
@@ -55,9 +52,9 @@ export default function Footer() {
               Company
             </h3>
             <ul className="mt-3 space-y-2 text-sm text-gray-500">
-              <li><Link href="/about" className="hover:text-gray-800 transition">About</Link></li>
-              <li><Link href="/contact" className="hover:text-gray-800 transition">Contact</Link></li>
-              <li><Link href="/work-with-us" className="hover:text-gray-800 transition">Work With Us</Link></li>
+              <li><Link href="/" className="hover:text-gray-800 transition">About</Link></li>
+              <li><Link href="/breakdown" className="hover:text-gray-800 transition">Contact</Link></li>
+              <li><Link href="/breakdown" className="hover:text-gray-800 transition">Work With Us</Link></li>
             </ul>
 
             <h3 className="text-sm font-semibold text-gray-800 uppercase tracking-wider mt-6">
@@ -72,14 +69,16 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Legal links row */}
+        {/* Legal links row - plain text, not clickable */}
         <div className="flex flex-wrap gap-4 justify-center text-sm text-gray-500 py-4 border-t border-gray-100">
-          <Link href="/privacy" className="hover:text-gray-800 transition">Privacy Policy</Link>
-          <Link href="/terms" className="hover:text-gray-800 transition">Terms & Conditions</Link>
-          <Link href="/cookies" className="hover:text-gray-800 transition">Cookie Policy</Link>
+          <span className="text-gray-500 hover:text-gray-800 transition">Privacy Policy</span>
+          <span>•</span>
+          <span className="text-gray-500 hover:text-gray-800 transition">Terms & Conditions</span>
+          <span>•</span>
+          <span className="text-gray-500 hover:text-gray-800 transition">Cookie Policy</span>
         </div>
 
-        {/* Disclaimer – shortened */}
+        {/* Disclaimer */}
         <div className="text-xs text-gray-400 text-center leading-relaxed max-w-3xl mx-auto py-4">
           <p>
             Results vary based on industry, market conditions, and execution. Any examples or testimonials are for informational purposes only
